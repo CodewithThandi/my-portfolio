@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #222;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #f4a2c4;
+            padding: 40px 0 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #f4a2c4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #f4a2c4;
+            padding: 32px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            
+        }
+
+        section a {
+            color: #2499ba;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e3e8e9;
+            margin-bottom: 18px;
+        }
+        h2 {
+            color: #00bcd4;
+            margin-top: 0;
+        }
+        .projects-list, .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .projects-list li, .skills-list li {
+            margin-bottom: 12px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 1.1em;
+        }
+        .contact-info span {
+            margin-right: 8px;
+            font-size: 1.3em;
+        }
+
+        #contact {
+            background-color: #f4a2c4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+
+        #contact h2 {
+            color: #00bcd4;
+            margin-bottom: 15px;
+        }
+
+        #contact a {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        #contact img {
+            width: 32px;
+            height: 28px;
+            vertical-align: middle;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+        @media (max-width: 600px) {
+            section {
+                padding: 16px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="profile">
+        <img src="redhair.jpeg" alt="Profile Photo" class="profile-img">
+        <h1>Hi ! I'm Thandiwe</h1>
+        <h2>Frontend Web Developer | JavaScript Enthusiast | Customer Service Professional</h2>
+    </header>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Who Exactly am I? I'm a passionate Web Developer with a certification in Customer Service Fundamentals. I'm currently building my skills in HTML, CSS, and JavaScript, with hands-on projects like interactive calculators, to-do
+            list app, and recipe book all deployed on GitHub. I love creating user-friendly interfaces and solving problems through code. My goal is to combine my customer service experience with my technical skills to create exceptional web experiences.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <strong>Countdown Live Clock</strong> - A real-time countdown clock built with HTML, CSS, and JavaScript. It features a sleek design and allows users to set a target date and time, displaying the remaining time in days, hours, minutes, and seconds.
+                 <a href="../My Portfolio/clock/index.html">View Project</a>
+            </li>
+            <li>
+                <strong>Colorful To-Do List</strong> - This is a simple to-do list app built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks, with a clean and intuitive interface. This project helped me understand CRUD operations and local storage.
+                 <a href="../My Portfolio/colorful-to-do-list/index.html">View Project</a>
+            </li>
+            <li>
+                <strong>Recipe Book</strong> - This is a recipe book of some of my favorite recipes.
+                <a href="../recipebook/index.html">View Project</a>
+            </li>
+            <li>
+                <strong>Basic Notes App</strong> - A simple yet functional notes app that allows users to create, and delete notes. It was built using HTML, CSS, and JavaScript, focusing on user interaction and responsiveness.
+                <a href="../My Portfolio/notes/index.html">View Project</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>JavaScript Mastery:</strong> DOM Manipulation, Event Handling</li>
+            <li><strong>Project Deployment:</strong> GitHub Pages</li>
+            <li><strong>Customer Service:</strong> Active Listening, Problem-Solving, Clear Communication, and Conflict Resolution</li>
+            <li><strong>Tools:</strong> VS Code, GitHub, Git</li>
+        
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:thandiwesoko99@gmail.com">
+            <img src="minutemailer.svg" alt="Email: thandiwesoko99@gmail.com"></a>
+        <a href="https://wa.me/96894445279" target="_blank">
+            <img src="whatsapp.svg" alt="WhatsApp: +96894445279"></a>
+        <a href="https://github.com/codewithThandi" target="_blank">
+            <img src="github.svg" alt="GitHub: github.com/codewithThandi"></a>
+        <a href="https://tiktok.com/@tee91923" target="_blank">
+            <img src="tiktok.svg" alt="TikTok: @tee91923"></a>
+        <a href="https://www.linkedin.com/in/thandiwe-soko-5604a535a" target="_blank">
+            <img src="linkfire.svg" alt="LinkedIn: @thandiwe-soko-5604a535a"></a>
+    </section>
+
+    <footer>
+        &copy; 2025 Thandiwe. All rights reserved.
+    </footer>
+</body>
+</html>
