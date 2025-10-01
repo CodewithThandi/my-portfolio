@@ -33,7 +33,7 @@
             transition: color 0.2s;
         }
         nav a:hover {
-            color: #00bcd4;
+            color: rgb(239, 236, 240);
         }
         section {
             max-width: 900px;
@@ -42,9 +42,26 @@
             padding: 32px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: all 0.2s ease, box-shadow 0.3s ease;
             
         }
-
+       @keyframes pop {
+           0% {
+               transform: scale(1);
+           }
+           50% {
+               transform: scale(1.07);
+           }
+           100% {
+               transform: scale(1.05);
+           }
+       }
+        section:hover {
+            animation: pop 0.1s forwards;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
         section a {
             color: #2499ba;
             text-decoration: none;
@@ -57,7 +74,8 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #e3e8e9;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
+            object-position: center;
         }
         h2 {
             color: #00bcd4;
@@ -130,7 +148,7 @@
     <header id="profile">
         <img src="redhair.jpeg" alt="Profile Photo" class="profile-img">
         <h1>Hi ! I'm Thandiwe</h1>
-        <h2>Frontend Web Developer | JavaScript Enthusiast | Customer Service Professional</h2>
+        <h2>Full-stack Web Developer [JavaScript & WordPress] | Customer Service Professional</h2>
     </header>
     <nav>
         <a href="#profile">Profile</a>
@@ -143,17 +161,20 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Who Exactly am I? I'm a passionate Web Developer with a certification in Customer Service Fundamentals. I'm currently building my skills in HTML, CSS, and JavaScript, with hands-on projects like interactive calculators, to-do
-            list app, and recipe book all deployed on GitHub. I love creating user-friendly interfaces and solving problems through code. My goal is to combine my customer service experience with my technical skills to create exceptional web experiences.
+            Who Exactly am I? I am a Full-stack Web Developer with skills in WordPress, WooCommerce, Elementor,JavaScript, HTML and CSS including a certification in Customer Service Fundamentals.
+            I have built several projects including a Countdown Live Clock, Colorful To-Do List, Calculator,Recipe Book and Basic Notes App using custom coding while also building e-commerce
+             websites using WordPress, WooCommerce, and Elementor, Canva and Elementor. I am passionate about creating user-friendly and visually appealing web applications.
         </p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>HTML, CSS & JavaScript Projects</h2>
         <ul class="projects-list">
             <li>
                 <strong>Countdown Live Clock</strong> - A real-time countdown clock built with HTML, CSS, and JavaScript. It features a sleek design and allows users to set a target date and time, displaying the remaining time in days, hours, minutes, and seconds.
                  <a href="../My Portfolio/clock/index.html">View Project</a>
+                 <br>
+                 <img src="githubcopilot.svg" alt="clock" style="width: 250px; height: 500px; object-fit: cover; border-radius: 8px; margin-top: 10px;">
             </li>
             <li>
                 <strong>Colorful To-Do List</strong> - This is a simple to-do list app built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks, with a clean and intuitive interface. This project helped me understand CRUD operations and local storage.
@@ -167,18 +188,57 @@
                 <strong>Basic Notes App</strong> - A simple yet functional notes app that allows users to create, and delete notes. It was built using HTML, CSS, and JavaScript, focusing on user interaction and responsiveness.
                 <a href="../My Portfolio/notes/index.html">View Project</a>
             </li>
+            <li>
+                <strong>Basic Calculator</strong> - A web-based calculator that performs basic arithmetic operations. Built with HTML, CSS, and JavaScript, it features a user-friendly interface and allows 
+                users to perform calculations with ease.
+                <a href="../../calculator/index.html ">View Project</a>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>WordPress & WooCommerce Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <strong>Beauty E-Commerce Website</strong> - Designed and developed a fully functional WordPress & WooCommerce beauty store with elegant UI/UX, product catalog, and shopping cart.
+             <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 15px;">
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Home page</h3><img src="homepage.jpeg" alt="Beauty E-Commerce Home" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+                </div>
+            
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Shopping page</h3><img src="shop.jpeg" alt="Beauty E-Commerce Shop" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+                </div>
+
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Booking page</h3><img src="book.jpeg" alt="Beauty E-Commerce Booking" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+                </div>
+
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Account page</h3><img src="myaccount.jpeg" alt="Beauty E-Commerce Account" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+                </div>
+
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Cart page</h3><img src="cart.jpeg" alt="Beauty E-Commerce Cart" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+                </div>
+
+                <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
+                <h3>Checkout page</h3><img src="checkout.jpeg" alt="Beauty E-Commerce Checkout" style="width:100%; height: 500px; object-fit: cover; border-radius:8px;">
+            </li>
+            
+    
         </ul>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul class="skills-list">
-            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-            <li><strong>JavaScript Mastery:</strong> DOM Manipulation, Event Handling</li>
-            <li><strong>Project Deployment:</strong> GitHub Pages</li>
-            <li><strong>Customer Service:</strong> Active Listening, Problem-Solving, Clear Communication, and Conflict Resolution</li>
-            <li><strong>Tools:</strong> VS Code, GitHub, Git</li>
-        
+            <li><strong> Front-End Web Development:</strong> HTML, CSS, JavaScript, DOM Manipulation, Event handling, Elementor.</li>
+            <li><strong>Back-End Web Development:</strong> WordPress, WooCommerce, PHP, MySQL.</li>
+            <li><strong>JavaScript Mastery:</strong> DOM Manipulation, Event Handling, Interactive UI Components.</li>
+            <li><strong>Project Deployment:</strong> GitHub Pages, Web hosting.</li>
+            <li><strong>Customer Service:</strong> Active Listening, Problem-Solving, Clear Communication, and Conflict Resolution.</li>
+            <li><strong>Tools & Platforms:</strong> VS Code, GitHub, Git, WordPress, Canva, Elementor.</li>
+
         </ul>
     </section>
 
@@ -190,14 +250,12 @@
             <img src="whatsapp.svg" alt="WhatsApp: +96894445279"></a>
         <a href="https://github.com/codewithThandi" target="_blank">
             <img src="github.svg" alt="GitHub: github.com/codewithThandi"></a>
-        <a href="https://tiktok.com/@tee91923" target="_blank">
-            <img src="tiktok.svg" alt="TikTok: @tee91923"></a>
         <a href="https://www.linkedin.com/in/thandiwe-soko-5604a535a" target="_blank">
             <img src="linkfire.svg" alt="LinkedIn: @thandiwe-soko-5604a535a"></a>
     </section>
 
     <footer>
-        &copy; 2025 Thandiwe. All rights reserved.
+        &copy; 2025 Thandiwe. All rights reserved. Made with❤️in Oman.
     </footer>
 </body>
 </html>
