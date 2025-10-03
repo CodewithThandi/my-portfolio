@@ -7,10 +7,10 @@
     
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             background: #222;
-            color: #222;
+            color: #333333;
         }
         header {
             background: #222;
@@ -75,7 +75,7 @@
             object-fit: cover;
             border: 4px solid #e3e8e9;
             margin-bottom: 15px;
-            object-position: center;
+            object-position:  center;
         }
         h2 {
             color: #00bcd4;
@@ -125,6 +125,37 @@
             height: 28px;
             vertical-align: middle;
         }
+
+        .projects-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: grid;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background: #fff;
+            
+        }
+
+        .project-card img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .js-projects {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
         footer {
             background: #222;
             color: #fff;
@@ -169,29 +200,39 @@
 
     <section id="projects">
         <h2>HTML, CSS & JavaScript Projects</h2>
-        <ul class="projects-list">
-            <li>
-                <strong>Countdown Live Clock</strong> - A real-time countdown clock built with HTML, CSS, and JavaScript. It features a sleek design and allows users to set a target date and time, displaying the remaining time in days, hours, minutes, and seconds.
-                 <a href="../My Portfolio/clock/index.html">View Project</a>
-                 <br>
-                 <img src="githubcopilot.svg" alt="clock" style="width: 250px; height: 500px; object-fit: cover; border-radius: 8px; margin-top: 10px;">
+        <ul class="projects-list js-projects">
+            <li class="project-card">
+                         <strong>Countdown Live Clock</strong> - A real-time countdown clock built with HTML, CSS, and JavaScript. It features a sleek design and allows users to set a target date and time, displaying the remaining time in days, hours, minutes, and seconds.
+                         <a href="../My Portfolio/clock/index.html">View Project</a>
+                         <br>
+                         <img src="countdown.jpg" alt="clock">
+                     </div>
+                </div>
             </li>
-            <li>
+            <li class="project-card">
                 <strong>Colorful To-Do List</strong> - This is a simple to-do list app built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks, with a clean and intuitive interface. This project helped me understand CRUD operations and local storage.
                  <a href="../My Portfolio/colorful-to-do-list/index.html">View Project</a>
+                 <br>
+                 <img src="to-do-list.jpg" alt="todolist">
             </li>
-            <li>
+            <li class="project-card">
                 <strong>Recipe Book</strong> - This is a recipe book of some of my favorite recipes.
                 <a href="../recipebook/index.html">View Project</a>
+                <br>
+                <img src="recipes.jpg" alt="recipebook">
             </li>
-            <li>
+            <li class="project-card">
                 <strong>Basic Notes App</strong> - A simple yet functional notes app that allows users to create, and delete notes. It was built using HTML, CSS, and JavaScript, focusing on user interaction and responsiveness.
                 <a href="../My Portfolio/notes/index.html">View Project</a>
+                <br>
+                <img src="notes.jpg" alt="notesapp">
             </li>
-            <li>
+            <li class="project-card">
                 <strong>Basic Calculator</strong> - A web-based calculator that performs basic arithmetic operations. Built with HTML, CSS, and JavaScript, it features a user-friendly interface and allows 
                 users to perform calculations with ease.
                 <a href="../../calculator/index.html ">View Project</a>
+                <br>
+                <img src="calculator.jpg" alt="calculator">
         </ul>
     </section>
 
@@ -202,27 +243,27 @@
                 <strong>Beauty E-Commerce Website</strong> - Designed and developed a fully functional WordPress & WooCommerce beauty store with elegant UI/UX, product catalog, and shopping cart.
              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; text-align: center; margin-top: 15px;">
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Home page</h3><img src="homepage.jpeg" alt="Beauty E-Commerce Home" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Home page</h3><img src="homepage.jpeg" alt="Beauty E-Commerce Home" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
                 </div>
             
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Shopping page</h3><img src="shop.jpeg" alt="Beauty E-Commerce Shop" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Shopping page</h3><img src="shop.jpeg" alt="Beauty E-Commerce Shop" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
                 </div>
 
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Booking page</h3><img src="book.jpeg" alt="Beauty E-Commerce Booking" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Booking page</h3><img src="book.jpeg" alt="Beauty E-Commerce Booking" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
                 </div>
 
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Account page</h3><img src="myaccount.jpeg" alt="Beauty E-Commerce Account" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Account page</h3><img src="myaccount.jpeg" alt="Beauty E-Commerce Account" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
                 </div>
 
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Cart page</h3><img src="cart.jpeg" alt="Beauty E-Commerce Cart" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Cart page</h3><img src="cart.jpeg" alt="Beauty E-Commerce Cart" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
                 </div>
 
                 <div style="flex: 1 1 calc(33% - 20px); max-width: 300px; text-align: center;">
-                <h3>Checkout page</h3><img src="checkout.jpeg" alt="Beauty E-Commerce Checkout" style="width:100%; height: 250px; object-fit: cover; border-radius:8px;">
+                <h3>Checkout page</h3><img src="checkout.jpeg" alt="Beauty E-Commerce Checkout" style="width:100%; height: 350px; object-fit: cover; border-radius:8px;">
             </li>
             
     
